@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="main.css">
+<body>
+<div class="alert-box" id="alert">
+    <p id="alertName">Alert box</p>
+    <button id="close">戻る</button>
+</div>
+<button onclick="alertOpen1('block','id入力してください。')">ID</button>
+<button onclick="alertOpen1('block','pw入力してください。')">PW</button>
+<script>
+    // function alertOpen1(obj1){
+    //     document.getElementById('alert').style.display = obj1;
+    //     document.getElementById('alertName').innerHTML = 'id入力してください。';
+    // }
+    
+    // function alertOpen2(obj1){
+    //     document.getElementById('alert').style.display = obj1;
+    //     document.getElementById('alertName').innerHTML = 'pw入力してください。';
+    // }
+    function alertOpen1(obj1,obj2){
+        document.getElementById('alert').style.display = obj1;
+        document.getElementById('alertName').innerHTML = obj2;
+    }
+    document.getElementById('close').addEventListener('click',alertClose);
+    
+    function alertClose(){
+        document.getElementById('alert').style.display = 'none';
+    }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</script>
+
+
+
+
+</body>
